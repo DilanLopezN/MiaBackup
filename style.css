@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   
+  
 }
 
 ul {
@@ -27,6 +28,14 @@ img {
   height: 128px;
 }
 
+#dowload {
+  color: black;
+  transition: all 0.4s;
+}
+
+#dowload:hover {
+  box-shadow: rgba(226, 132, 44, 0.2) 0px 2px 8px 0px;
+}
 /*====  VARIABLES ============================ */
 :root {
   --header-height: 4.5rem;
@@ -66,6 +75,12 @@ body {
   font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
+}
+.title-main {
+  font-weight: 700;
+  font-size: 2rem;
+  -webkit-font-smoothing: auto;
+  color: hsl(152, 73%, 19%);
 }
 
 .button {
@@ -357,10 +372,13 @@ nav.show div.icon-close {
 width: 100%;
   gap: 1.5rem;
 }
+
 .card img {
   width: 68px;
+  text-decoration: none;
 }
 .card {
+  text-decoration: none;
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
@@ -369,6 +387,7 @@ width: 100%;
 }
 
 .card i {
+  text-decoration: none;
   display: block;
   margin-bottom: 1.5rem;
   font-size: 5rem;
@@ -376,6 +395,7 @@ width: 100%;
 }
 
 .card .title {
+  text-decoration: none;
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -478,6 +498,23 @@ width: 100%;
 footer {
   background: var(--base-color);
 }
+
+.footer-ours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-ours p {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.footer-ours span {
+  font-weight: bold;
+}
+
 
 footer.section {
   padding: 4rem 0;
