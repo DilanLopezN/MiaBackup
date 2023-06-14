@@ -775,14 +775,11 @@ footer .social a:hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    
-    
+    font-family: 'Rajdhani', sans-serif;
   }
   
   iframe {
-    width: 20rem;
-    height: 16.25rem;
+    width: 280px;
   }
   ul {
     list-style: none;
@@ -802,6 +799,17 @@ footer .social a:hover {
     height: 7.25rem;
   }
   
+#socialMedia {
+  display: flex; 
+  gap: 1rem;
+  align-items: center;
+}
+
+#socialMedia {
+  color: white;
+  font-weight: bold;
+}
+
   #dowload {
     color: black;
     transition: all 0.4s;
@@ -833,8 +841,8 @@ footer .social a:hover {
     --title-font-size: 1.675rem;
     --subtitle-font-size: 1rem;
   
-    --title-font: 'Poppins', sans-serif;
-    --body-font: 'DM Sans', sans-serif;
+    --title-font: 'Rajdhani', sans-serif;
+    --body-font: 'Rajdhani', sans-serif;
   }
   
   /*===  BASE ============================ */
@@ -856,7 +864,7 @@ footer .social a:hover {
   }
   .title-main {
     font-weight: 700;
-    font-size: 1.65rem;
+    font-size: 1.45rem;
     -webkit-font-smoothing: auto;
     color: hsl(0, 0%, 0%);
   }
@@ -907,7 +915,7 @@ footer .social a:hover {
   }
   
   .section {
-    padding: calc(5rem + var(--header-height)) 0;
+    padding: 3rem;
   }
   
   .section .title {
@@ -930,7 +938,7 @@ footer .social a:hover {
     border-bottom: 1px solid #e4e4e4;
     margin-bottom: 2rem;
     display: flex;
-  
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -1061,6 +1069,9 @@ footer .social a:hover {
   }
   
   #home {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 6rem;
     overflow: hidden;
   }
   
@@ -1076,7 +1087,7 @@ footer .social a:hover {
     content: '';
     height: 100%;
     width: 100%;
-    background: var(--base-color-second);
+    background:  hsl(38, 72%, 34%);
     position: absolute;
     top: -16.8%;
     left: 16.7%;
@@ -1147,27 +1158,30 @@ footer .social a:hover {
   
   /*====  SERVICES ============================ */
   .cards.grid {
-  width: 100%;
-    gap: 1.5rem;
+   width: 100%;
   }
   
   .card img {
-    width: 68px;
+    width: 48px;
     text-decoration: none;
   }
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
     text-decoration: none;
-    padding: 3.625rem 2rem;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-bottom: 0.25rem solid var(--base-color);
-    border-radius: 0.25rem 0.25rem 0 0;
+    border-radius: 22px;
     text-align: center;
   }
   
   .card i {
     text-decoration: none;
     display: block;
-    margin-bottom: 1.5rem;
+ 
     font-size: 5rem;
     color: var(--base-color);
   }
@@ -1175,7 +1189,6 @@ footer .social a:hover {
   .card .title {
     text-decoration: none;
     font-size: 1.5rem;
-    margin-bottom: 0.75rem;
   }
   
   /*====  TESTIMONIALS ============================ */
@@ -1250,7 +1263,7 @@ footer .social a:hover {
   
   /*====  CONTACT ============================ */
   #contact .grid {
-    gap: 4rem;
+   width: 100%;
   }
   
   #contact .text p {
