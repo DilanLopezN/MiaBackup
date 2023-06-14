@@ -111,6 +111,7 @@ window.addEventListener('scroll', function () {
 
 
 let imagens = [
+  "./assets/fotos/espaco0.png",
   "./assets/fotos/espaco1.png",
   "./assets/fotos/espaco3.png",
   "./assets/fotos/espaco2.png"
