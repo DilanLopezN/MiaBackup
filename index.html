@@ -7,6 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>Mia Cucina</title>
 
     <!-- Icones -->
@@ -23,23 +24,29 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header id="header">
+      <div class="subNavs">
+        <div class="subMenus">
+          <img src="assets/fotos/Alarm.svg" alt=""> 
+          <a class="" href="#footer">Horários</a>
+        </div>
+    
+        
+
+      </div>
+   
       <nav class="container">
       <img src="./assets/LogoMIA.png" alt="" id="mainlogo" /> 
         <!-- menu -->
         <div class="menu">
           <ul class="grid">
             <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">Cardápio</a></li>
-            <li><a class="title" href="#testimonials">Galeria</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
+            <li><a class="title" href="#testimonials">Nossos pratos</a></li>
+            <li><a class="title" href="#contact">Reserva</a></li>
             <li><a class="title" href="https://www.instagram.com/espaco_miacucina/" target="_blank"><img id="logoInsta" src="assets/fotos/instagram.svg" alt=""></a></li>
           </ul>
         </div>
@@ -54,17 +61,17 @@
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
-            <img
-              src="./assets//fotos/espaco1.png"
-              alt=""
-            />
+            <img id="toggleImg" src="./assets/fotos/espaco1.png" alt=""> 
+         
+           
           </div>
           <div class="text">
+           
+            <h2 class="title-main">Bem-vindos à MIA CUCINA! </h2>
             <p>
               Culinária Italiana em Santo André – SP
 
             </p>
-            <h2 class="title-main">MIA CUCINA</h2>
             <p>
               A MIA CUCINA é um restaurante localizado em Santo André, SP, que oferece uma experiência gastronômica única.
 
@@ -80,95 +87,69 @@
 
       <div class="divider-1"></div>
 
-      <!-- ABOUT -->
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">
-            <img
-              src="./assets//fotos/prato1.png"
-              alt="3 mulheres sorrindo"
-            />
-          </div>
-          <div class="text">
-            <h2 class="title"> Bem-vindo à MIA CUCINA!</h2>
-            <p>
-Localizada na encantadora cidade de Santo André, em São Paulo, a MIA CUCINA é muito mais do que apenas um restaurante italiano - é uma experiência gastronômica autêntica que irá transportar você para as deliciosas tradições culinárias da Itália.
-
-Nosso compromisso com a qualidade é inabalável. Selecionamos cuidadosamente os melhores ingredientes, desde azeite extravirgem até ervas frescas, para garantir que cada prato seja uma verdadeira obra de arte culinária. Nossos chefs habilidosos combinam técnicas tradicionais com um toque moderno, criando pratos que são uma explosão de sabores autênticos e sofisticados.
-
-Na MIA CUCINA, estamos ansiosos para compartilhar nossa paixão pela culinária italiana com você. Seja bem-vindo ao nosso mundo de sabores autênticos, ingredientes frescos e momentos inesquecíveis. Junte-se a nós e permita-se desfrutar de uma experiência gastronômica única.
-
-Buon appetito!
-            </p>
-            <br />
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-2"></div>
-
-      <!-- SERVICES -->
-      <section class="section" id="services">
-        <div class="container grid">
-      
-          <header>
-            <h2 class="title">Cardápios</h2>
-            <p>
-              Cardápios exclusivo no <strong>Mia Cucina</strong> para você
-              experimentar a verdadeira comida italiana
-            </p>
-          </header>
-          <div class="cards grid">
-
-            <a href="./MenuExe.pdf" target="_blank" id="dowload">
-          
-            <div class="card">
-              <h3 class="title">Menu Execultivo</h3>
-              <img src="./assets/fotos/download.svg" alt="">
+         <!-- SERVICES -->
+         <section class="section" id="services">
+          <div class="container grid">
+        
+            <header>
+              <h2 class="title-main">Cardápios</h2>
               <p>
-               Visualizar Cardápio
+                Cardápios exclusivo no <strong>Mia Cucina</strong> para você
+                experimentar a verdadeira comida italiana
               </p>
+            </header>
+            <div class="cards grid">
+  
+              <a href="./MenuExe.pdf" target="_blank" id="dowload">
+            
+              <div class="card">
+                <h3 class="title">Menu Execultivo</h3>
+                <img src="./assets/fotos/download.svg" alt="">
+                <p>
+                 Visualizar Cardápio
+                </p>
+              </div>
+            </a>
+  
+            <a href="./Cardapio2023.pdf" target="_blank"  id="dowload">
+              <div class="card">
+                <h3 class="title">Cardápio Geral</h3>
+                <img src="./assets/fotos/download.svg" alt="">
+                <p>
+                  Visualizar Cardápio
+                </p>
+              </div>
+            </a>
             </div>
-          </a>
-
-          <a href="./Cardapio2023.pdf" target="_blank"  id="dowload">
-            <div class="card">
-              <h3 class="title">Cardápio Geral</h3>
-              <img src="./assets/fotos/download.svg" alt="">
-              <p>
-                Visualizar Cardápio
-              </p>
-            </div>
-          </a>
           </div>
-        </div>
-      </section>
+        </section>
 
+        
       <div class="divider-1"></div>
 
       <!-- TESTIMONIALS -->
       <section class="section" id="testimonials">
         <div class="container swiper">
           <header>
-            <h2 class="title">Conheça nosso espaço</h2>
+            <h2 class="title-main">Conheça nossos Pratos</h2>
           </header>
           <div class="testimonials swiper-container">
             <div class="swiper-wrapper">
               <div class="testimonial swiper-slide">
                 <blockquote>
-                  <img src="./assets/fotos/espaco1.png" alt="">
+                  <img src="./assets/fotos/prato1.png" alt="">
                 </blockquote>
               </div>
 
               <div class="testimonial swiper-slide">
                 <blockquote>
-                  <img src="./assets/fotos/espaco2.png" alt="">
+                  <img src="./assets/fotos/prato2.png" alt="">
                 </blockquote>
               </div>
 
               <div class="testimonial swiper-slide">
                 <blockquote>
-                  <img src="./assets/fotos/espaco3.png" alt="">
+                  <img src="./assets/fotos/prato3.png" alt="">
                 </blockquote>
               </div>
             </div>
@@ -178,6 +159,16 @@ Buon appetito!
           </div>
         </div>
       </section>
+
+        <div class="divider-2"></div>
+
+
+
+
+
+
+   
+
 
       <div class="divider-2"></div>
 
@@ -191,7 +182,8 @@ Buon appetito!
               ouvir suas críticas e sugestões.
             </p>
             <a
-            href="https://api.whatsapp.com/send?phone=+551134205004&text=Oi! Gostaria de agendar um horário" target="_blank"
+            href="https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva"
+      target="_blank"
               class="button"
               ><i class="icon-phone"></i>Reservas e Informações</a
             >
@@ -210,10 +202,10 @@ Buon appetito!
       <div class="divider-1"></div>
     </main>
 
-    <footer class="section">
+    <footer class="section" id="footer">
       <div class="container grid">
         <div class="brand">
-          <a class="logo logo-alt" href="#home">Mia<span>Cucina</span>.</a>
+          <a class="logo logo-alt" href="#home">MiaCucina.</a>
           <p>©2023 MiaCucina.</p>
           <p>Todos os direitos reservados.</p>
         </div>
@@ -249,7 +241,7 @@ Buon appetito!
       </div>
     </footer>
 
-    <a href="https://api.whatsapp.com/send?phone=+551134205004&text=Oi! Gostaria de agendar um horário" target="_blank" class="back-to-top">
+    <a href="https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva" target="_blank" class="back-to-top">
      
       <img src="./assets/fotos/zap.svg" alt="">
     </a>
