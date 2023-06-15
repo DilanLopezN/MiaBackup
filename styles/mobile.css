@@ -1,0 +1,285 @@
+@media (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Upright', serif !important; 
+  }
+  iframe {
+    width: 300px;
+  }
+  .container {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    font-size: 1rem;
+     font-weight: bold;
+  }
+
+  #mainlogo {
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  #dowload {
+    color: black;
+    transition: all 0.4s;
+  }
+  
+  #dowload:hover {
+    box-shadow: rgba(226, 132, 44, 0.2) 0px 2px 8px 0px;
+  }
+  
+  
+  .subNavs {
+    display: none;
+  }
+  
+  .subNavs a {
+    color: black;
+  }
+  
+  :root {
+    --header-height: 4.5rem;
+  
+    /* colors */
+    --hue: 15;
+    /* HSL color mode */
+    --base-color:  #936e4b;
+    --base-color-second: hsl(38, 72%, 34%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: black;
+    --text-color: black;
+    --text-color-light: black;
+    --body-color: hsl(38, 72%, 34%);
+    /* fonts */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1.55rem;
+  
+    --title-font: 'Cormorant Upright', sans-serif;
+    --body-font: 'Cormorant Upright', sans-serif;
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font: 400 1rem var(--body-font);
+    font-weight: 500;
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .title {
+    font: 700 var(--title-font-size) var(--title-font);
+    color: var(--title-color);
+    -webkit-font-smoothing: auto;
+  }
+  .title-main {
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+    font-style: italic;
+    color: whitesmoke;
+    background-color: #936e4b;
+    border-radius: 12px;
+  }
+
+  .sub-main {
+    font-weight: 500;
+    font-size: 1rem;
+    -webkit-font-smoothing: auto;
+    font-style: italic;
+    color: white;
+    background-color: #936e4b;
+    border-radius: 12px;
+  }
+
+  .locale {
+    font-weight: 400;
+    margin-top: 1rem;
+    font-size: 1rem;
+    -webkit-font-smoothing: auto;
+    font-style: italic;
+    color: whitesmoke;
+    background-color: #936e4b;
+    border-radius: 12px;
+  }
+  #home {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+
+  .button {
+    background-color: #cc8400;
+    color: white;
+    font-weight: medium;
+    font-size: 1.25rem;
+    height: 3.125rem;
+    transition: all 0.3s;
+  }
+  .button:hover {
+    filter: brightness(1.1);
+  }
+
+   /*====  NAVIGATION ============================ */
+  nav {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  nav ul li {
+    text-align: center;
+  }
+  
+  nav ul li a {
+    transition: color 0.2s;
+    position: relative;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: var(--base-color);
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--base-color);
+  
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+  
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::after,
+  nav ul li a.active::after {
+    width: 100%;
+  }
+  
+  nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+  }
+  
+  nav .menu ul {
+    display: none;
+  }
+  
+  /* Mostrar menu */
+  nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+  
+    background: whitesmoke;
+  
+    height: 100vh;
+    width: 100vw;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  nav.show .menu ul {
+    display: grid;
+  }
+  
+  nav.show ul.grid {
+    gap: 4rem;
+  }
+  
+  /* toggle menu */
+  .toggle {
+    color: var(--base-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  nav .icon-close {
+    visibility: hidden;
+    opacity: 0;
+  
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+  
+    transition: 0.2s;
+  }
+  
+  nav.show div.icon-close {
+    visibility: visible;
+    opacity: 1;
+    top: 1.5rem;
+  }
+ #logoInsta {
+  width: 38px;
+ }
+
+ .cards.grid {
+  width: 100%;
+ }
+ 
+ .card img {
+   width: 48px;
+   text-decoration: none;
+ }
+ .card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 180px;
+   text-decoration: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-bottom: 0.25rem solid var(--base-color);
+   border-radius: 22px;
+   text-align: center;
+ }
+ 
+ .card i {
+   text-decoration: none;
+   display: block;
+
+   font-size: 5rem;
+   color: var(--base-color);
+ }
+ 
+ .card .title {
+   text-decoration: none;
+   font-size: 1.5rem;
+ }
+}

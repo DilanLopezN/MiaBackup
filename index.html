@@ -6,7 +6,7 @@
     <!-- PAGE INFO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;700&display=swap" rel="stylesheet">
 
     <title>Mia Cucina</title>
 
@@ -20,7 +20,9 @@
 />
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/desktop.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -32,6 +34,12 @@
         <div class="subMenus">
           <img src="assets/fotos/Alarm.svg" alt=""> 
           <a class="" href="#footer">Horários</a>
+
+        </div>
+        <div class="subMenus">
+          <img src="assets/fotos/PhoneCall.svg" alt=""> 
+          <a >(11) 4992-1643</a>
+
         </div>
     
         
@@ -39,7 +47,7 @@
       </div>
    
       <nav class="container">
-      <img src="./assets/LogoMIA.png" alt="" id="mainlogo" /> 
+      <img src="./assets/LogoMIA.png" alt="" id="mainlogo" onclick=navigateHome() /> 
         <!-- menu -->
         <div class="menu">
           <ul class="grid">
@@ -59,33 +67,70 @@
     <main>
       <!-- HOME -->
       <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
-            <img id="toggleImg" src="./assets/fotos/espaco1.png" alt=""> 
-         
+      <div class="swiper" id="home">
+        <div class="swiper-wrapper">
+          <section class="section swiper-slide" id="home" >
+            <img src="./assets/fotos/espaco0.png" class="homeBg" alt="">
+              <div class="container grid ">
+                <div class="text">
            
-          </div>
-          <div class="text">
+                  <h2 class="title-main">Bem-vindos à MIA CUCINA! </h2>
+                  <p class="locale">
+                    Culinária Italiana em Santo André – SP
+      
+                  </p>
+                  <p class="sub-main" >
+                    A MIA CUCINA é um restaurante localizado em Santo André, SP, que oferece uma experiência gastronômica única.
+      
+                    Nossa equipe é apaixonada por comida italiana e estamos comprometidos em fornecer ingredientes frescos e de alta qualidade em todos os pratos que preparamos.
+                    
+                  </p>
+                 
+                  <a class="button" href="#contact">Reservar Horário</a>
+                </div>
            
-            <h2 class="title-main">Bem-vindos à MIA CUCINA! </h2>
-            <p>
-              Culinária Italiana em Santo André – SP
-
-            </p>
-            <p>
-              A MIA CUCINA é um restaurante localizado em Santo André, SP, que oferece uma experiência gastronômica única.
-
-              Nossa equipe é apaixonada por comida italiana e estamos comprometidos em fornecer ingredientes frescos e de alta qualidade em todos os pratos que preparamos.
-              
-            </p>
-           
-            <a class="button" href="#contact">Reservar Horário</a>
-          </div>
+              </div>
+          </section>
+          <section class="section swiper-slide" id="home" >
+            <img src="./assets/fotos/espaco2.png" class="homeBg" alt="">
+          </section>
      
+          
         </div>
+        <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
       </section>
-
+      <!-- HOME -->
       <div class="divider-1"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
          <!-- SERVICES -->
          <section class="section" id="services">
@@ -162,16 +207,6 @@
 
         <div class="divider-2"></div>
 
-
-
-
-
-
-   
-
-
-      <div class="divider-2"></div>
-
       <!-- CONTACT -->
       <section class="section" id="contact">
         <div class="container grid">
@@ -192,7 +227,12 @@
           <div class="links">
             <ul class="grid">
               <li><i class="icon-phone"></i>Tell: (11) 4992-1643</li>
-              <li><i class="icon-map-pin"></i>Rua das Paineiras Nº520 - Jardim, Santo André - SP</li>
+              <a class="linkMaps" href="https://www.google.com/maps/place/Mia+Cucina/@-23.6462011,-46.5422468,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce433741320aa9:0xd704adb5871c7946!8m2!3d-23.6462011!4d-46.5400581!16s%2Fg%2F11jsrnd3d7?entry=ttu"
+              target="_blank"
+              >
+                <li><i class="icon-map-pin"></i>Rua das Paineiras Nº520 - Jardim, Santo André - SP</li>
+              </a>
+             
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.831738856957!2d-46.54263838933051!3d-23.64619616462528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce433741320aa9%3A0xd704adb5871c7946!2sMia%20Cucina!5e0!3m2!1spt-BR!2sbr!4v1686747861000!5m2!1spt-BR!2sbr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </ul>
           </div>

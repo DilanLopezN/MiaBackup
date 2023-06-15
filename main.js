@@ -70,7 +70,7 @@ scrollReveal.reveal(
 const backToTopButton = document.querySelector('.back-to-top')
 
 function backToTop() {
-  if (window.scrollY >= 5) {
+  if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
@@ -110,37 +110,31 @@ window.addEventListener('scroll', function () {
 })
 
 
-let imagens = [
-  "./assets/fotos/espaco0.png",
-  "./assets/fotos/espaco1.png",
-  "./assets/fotos/espaco3.png",
-  "./assets/fotos/espaco2.png"
-]
-
-
-
-function changeImages() {
-  const  img = document.getElementById("toggleImg")
-
-
-  
-  for (let i = 0; i < imagens.length; i++) {
-    setInterval(function() {
-      img.src = imagens[i];
-      i = (i + 1) % imagens.length; // Incrementa o índice e volta ao início se chegar ao final do array
-    }, 2500);
-
-    /*
-    setTimeout(function() {
-      img.src = imagens[i];
-    }, i * 1000)
-    */
-  }
-
-
-
-
-
+/* Navega HOME clicando na logo */
+function navigateHome() {
+  window.location.href = '#home';
 }
 
-changeImages()
+
+const home = new Swiper('.swiper', {
+  slidesPerView: 1,
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
