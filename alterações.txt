@@ -1,0 +1,15 @@
+header {
+    logo original, horários apos o header, lado a lado. restante do menu 
+},
+slides {
+    1: BEM VINDO
+    2: PRATOS(fotos + nomes)
+    3: ADEGA
+},
+body {
+    diminur tempo de rolagem, retirar pratos e colocar nos slides,
+    melhorar design cardápio.
+    alterar cores, teste marrom escuro[] = precisa ser validado.
+}
+
+LINK THREE MIA E MANDUU

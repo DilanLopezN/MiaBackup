@@ -12,12 +12,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
-}
-
-img {
-  width: 100%;
-  height: 100%;
+  color: whitesmoke;
 }
 
 #mainlogo {
@@ -26,7 +21,7 @@ img {
 }
 
 #dowload {
-  color: black;
+  color: whitesmoke;
   transition: all 0.4s;
 }
 
@@ -37,12 +32,12 @@ img {
 
 .subNavs {
   display: flex;
-  flex-direction: column;
+
   margin: 1rem;
 }
 
 .subNavs a {
-  color: black;
+  color: whitesmoke;
 }
 
 .subMenus {
@@ -61,12 +56,12 @@ img {
   /* colors */
   --hue: 15;
   /* HSL color mode */
-  --base-color:  #936e4b;
+  --base-color:  rgb(204, 132, 0);
   --base-color-second: hsl(38, 72%, 34%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: black;
-  --text-color: black;
-  --text-color-light: black;
+  --title-color: white;
+  --text-color: white;
+  --text-color-light: w;
   --body-color: hsl(38, 72%, 34%);
   /* fonts */
   --title-font-size: 1.875rem;
@@ -88,9 +83,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.title ul li {
+  color: white;;
+}
+
 .title {
   font: 700 var(--title-font-size) var(--title-font);
-  color: var(--title-color);
+  color: white;
   -webkit-font-smoothing: auto;
 }
 .title-main {
@@ -175,7 +174,7 @@ button:hover {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color:white;
+  background-color: #292929;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   width: 100%;
 }
@@ -185,18 +184,7 @@ button:hover {
 }
 
 /*====  LOGO ============================ */
-.logo {
-  font: 700 1.31rem var(--title-font);
-  color: var(--title-color);
-}
 
-.logo span {
-  color: var(--base-color);
-}
-
-.logo-alt span {
-  color: var(--body-color);
-}
 /*====  NAVIGATION ============================ */
 nav {
   height: var(--header-height);
@@ -217,14 +205,14 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: var(--base-color);
+  color: rgb(204, 132, 0);
 }
 
 nav ul li a::after {
   content: '';
   width: 0%;
   height: 2px;
-  background: var(--base-color);
+  background:rgb(204, 132, 0);
 
   position: absolute;
   left: 0;
@@ -254,7 +242,7 @@ nav.show .menu {
   opacity: 1;
   visibility: visible;
 
-  background: var(--body-color);
+  background: rgb(204, 132, 0);
 
   height: 100vh;
   width: 100vw;
@@ -327,22 +315,30 @@ nav.show div.icon-close {
   margin-right: 1rem;
   padding: 1rem;
 }
+
 #home {
+  background-image: url(/assets/fotos/espaco0.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
   display: flex;
   align-items: center;
  height: 600px;
 }
 
-.homeBg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
+#overlay {
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
 }
+
+
+
 
 #home .container {
   margin: 0;

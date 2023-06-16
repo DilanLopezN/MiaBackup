@@ -10,9 +10,10 @@
     list-style: none;
   }
   
+  
   a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
 
   p {
@@ -20,18 +21,15 @@
      font-weight: bold;
   }
   
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  
+
   #mainlogo {
+    margin-right: 2rem;
     width: 8rem;
     height: 8rem;
   }
   
   #dowload {
-    color: black;
+    color: white;
     transition: all 0.4s;
   }
   
@@ -42,14 +40,19 @@
   
   .subNavs {
     display: flex;
-    flex-direction: column;
-    margin: 1rem;
+    gap: 1rem;
+
   }
   
+  #imgSubmenu {
+  color: wheat;
+  }
+
   .subNavs a {
-    color: black;
+    color: white;
   }
-  
+
+
   .subMenus {
     display: flex;
     align-items: center;
@@ -69,9 +72,9 @@
     --base-color:  #936e4b;
     --base-color-second: hsl(38, 72%, 34%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
-    --title-color: black;
-    --text-color: black;
-    --text-color-light: black;
+    --title-color: white;
+    --text-color: white;
+    --text-color-light: white;
     --body-color: hsl(38, 72%, 34%);
     /* fonts */
     --title-font-size: 1.875rem;
@@ -95,38 +98,35 @@
   
   .title {
     font: 700 var(--title-font-size) var(--title-font);
-    color: var(--title-color);
+    color: white;
     -webkit-font-smoothing: auto;
   }
   .title-main {
     font-weight: 700;
-    font-size:2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     -webkit-font-smoothing: auto;
     font-style: italic;
     color: whitesmoke;
-    background-color: #936e4b;
     border-radius: 12px;
   }
 
   .sub-main {
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.85rem;
     -webkit-font-smoothing: auto;
     font-style: italic;
     color: white;
-    background-color: #936e4b;
     border-radius: 12px;
   }
 
   .locale {
     font-weight: 400;
     margin-top: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.55rem;
     -webkit-font-smoothing: auto;
     font-style: italic;
     color: whitesmoke;
-    background-color: #936e4b;
     border-radius: 12px;
   }
   
@@ -192,6 +192,17 @@
   main {
     margin-top: var(--header-height);
   }
+  
+
+  #home {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+   height: 600px;
+  }
+
+  
+
 
   /* home */
   #home .container {
@@ -200,14 +211,17 @@
     margin: 0 auto;
   }
 
+
   #home .image {
     order: 1;
   }
 
   #home .text {
-    order: 0;
-    max-width: 24rem;
-    text-align: left;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+ 
   }
 
   /* about */
@@ -218,7 +232,6 @@
 
   /* services */
   .cards {
-
     display: flex;
     justify-content:center;
     align-items: center;
