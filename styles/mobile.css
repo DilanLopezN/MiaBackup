@@ -103,11 +103,29 @@ width: 100%;
   }
   
   .swiper-button-next {
-    display: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    color: white;
+    border: none;
+    margin-right: 1rem;
+    padding: 1rem;
   }
-
   .swiper-button-prev {
-    display: none;
+    background-color: transparent;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    color: white;
+    border: none;
+    margin-right: 1rem;
+    padding: 1rem;
   }
 
   /*====  NAVIGATION ============================ */
@@ -239,6 +257,20 @@ nav.show div.icon-close {
 .carousel.dinnerContent {
   display: none;
 }
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
   }
   
   
