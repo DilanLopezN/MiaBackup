@@ -260,12 +260,14 @@ nav.show div.icon-close {
 
 #footer {
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
 
 #footer .container {
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
