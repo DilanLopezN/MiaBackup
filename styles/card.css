@@ -14,19 +14,18 @@
     --color-gray-900: #0f172a;
     --color-green-100: #04d361;
     --color-green-200: #1b873f;
-    --color-purple-100: rgb(204, 132, 0);
+    --color-purple-100: #936e4b;
     --color-purple-200: #be803a;
     --color-white: #ffffff;
-    --color-orange: #fba94c;
+    --color-orange: #936e4b;
   }
   
 
   .pricing-table {
     display: flex;
-    align-items: center;
-    
+    justify-content: center;
+    width: 100%;
     background-color: #292929;
-
    height: 600px;
     gap: 24px;
     padding: 24px;
@@ -40,7 +39,6 @@ left: 50%;
   
   #sectionMenu {
     width: 320px;
-
     margin: auto;
   }
 
@@ -184,7 +182,7 @@ left: 50%;
   
     display: inline-block;
   
-    background-color: rgb(204, 132, 0);
+    background-color: #936e4b;
     color: white;
     padding: 8px 16px;
     border-radius: 6px;

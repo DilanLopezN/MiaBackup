@@ -23,6 +23,7 @@
   
 
   #mainlogo {
+
     margin-right: 2rem;
     width: 8rem;
     height: 8rem;
@@ -150,7 +151,7 @@
   }
 
   .button {
-    background-color: #cc8400;
+    background-color: #936e4b;
     color: white;
     font-weight: medium;
     font-size: 1.25rem;

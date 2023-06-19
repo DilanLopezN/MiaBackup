@@ -56,13 +56,13 @@ a {
   /* colors */
   --hue: 15;
   /* HSL color mode */
-  --base-color:  rgb(204, 132, 0);
-  --base-color-second: hsl(38, 72%, 34%);
+  --base-color:  #936e4b;
+  --base-color-second:#936e4b;
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: white;
   --text-color: white;
   --text-color-light: w;
-  --body-color: hsl(38, 72%, 34%);
+  --body-color: #936e4b;
   /* fonts */
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1.55rem;
@@ -80,11 +80,17 @@ body {
   font: 400 1.25rem var(--body-font);
   font-weight: 500;
   color: var(--text-color);
-  -webkit-font-smoothing: antialiased;
+
 }
 
 .title ul li {
   color: white;;
+}
+
+.navTitle {
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.25rem;
 }
 
 .title {
@@ -205,14 +211,14 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: rgb(204, 132, 0);
+  color: #936e4b;
 }
 
 nav ul li a::after {
   content: '';
   width: 0%;
   height: 2px;
-  background:rgb(204, 132, 0);
+  background: #936e4b;
 
   position: absolute;
   left: 0;
@@ -562,7 +568,7 @@ width: 100%;
 
 /*====  FOOTER ============================ */
 footer {
-  background: #936e4b;
+  background: #292929;;
 }
 
 .footer-ours {
