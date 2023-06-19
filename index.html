@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="./styles/desktop.css" />
     <link rel="stylesheet" href="./styles/mobile.css" />
     <link rel="stylesheet" href="./styles/card.css"/>
+    <link rel="stylesheet" href="styles/dinner.css">
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+  
   </head>
   <body>
     <header id="header">
@@ -76,7 +78,6 @@
     <main>
       <!-- HOME -->
       <div class="section" id="home">
-      
         <div class="swiper" id="home">
           <div class="swiper-wrapper">
             
@@ -98,45 +99,74 @@
                 </div>
               </div>
             </section>
-            <section class="section swiper-slide"  id="testimonials">
-            
-                <div class="container swiper">
-                  <header>
-                    <h2 class="title-main">Conheça nossos Pratos</h2>
-                  </header>
-                  <div class="testimonials swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="testimonial swiper-slide">
-                        <blockquote>
-                          <img src="./assets/fotos/prato1.png" alt="" />
-                        </blockquote>
-                      </div>
-        
-                      <div class="testimonial swiper-slide">
-                        <blockquote>
-                          <img src="./assets/fotos/prato2.png" alt="" />
-                        </blockquote>
-                      </div>
-        
-                      <div class="testimonial swiper-slide">
-                        <blockquote>
-                          <img src="./assets/fotos/prato3.png" alt="" />
-                        </blockquote>
-                      </div>
-                    </div>
-        
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+            <section class="section swiper-slide"  id=testimonials"">
+              <img src="/assets/fotos/espaco2.jpg" id="testBg" alt="">
+              <img src="" id="overlay"  alt="">
+    
+              <div id="testimonialContent">
+                <div>
+                  <h2 id="food-title">Sabores Autênticos</h2>
+                  <p id="food-description">A comida italiana é conhecida por seus sabores autênticos e irresistíveis. Com uma combinação única de ervas, temperos e ingredientes frescos, cada prato italiano traz uma explosão de sabores que agrada o paladar e desperta os sentidos.</p>
+                </div>
+
+
+              <div class="carousel dinnerContent">
+                <div class="carousel-inner">
+                  <div  class="carousel-item active dinnerCards">
+                    <img class="dinnerBg" src="/assets/fotos/prato1.png" alt="Imagem 1">
+                    <img src="" id="overlay" alt="">
+                    <h2 class="dinnerTitle">Polpo alla griglia</h2>
+                  </div>
+                  <div  class="carousel-item dinnerCards">
+                    <img src="" id="overlay" alt="">
+                    <img class="dinnerBg" src="/assets/fotos/prato2.png" alt="Imagem 2">
+                    <h2 class="dinnerTitle">Risoto Toscano</h2>
+                  </div>
+                  <div class="carousel-item dinnerCards">
+                    <img src="" id="overlay" alt="">
+                    <img  class="dinnerBg"src="/assets/fotos/prato3.png" alt="Imagem 3">
+                    <h2 class="dinnerTitle">Example 3</h2>
                   </div>
                 </div>
-             
+                
+                <a class="carousel-prev" href="#">&#10094;</a>
+                <a class="carousel-next" href="#">&#10095;</a>
+              </div>
+
+
+
+
+
+
+
+
+              </div>
         
+            </section>
+
+            <section class="section swiper-slide" id="wines">
+             <img src="/assets//fotos/espaco3.png" alt="" id="testBg">
+              <img src="" id="overlay"  alt="">
+
+      
+              <div class="winesContainer">
+                <div>
+                  <h1 id="food-title" >Vinhos & Bebidas</h1>
+                  <p id="food-description" >onde os melhores vinhos e bebidas se unem para criar uma experiência única. Descubra um mundo de qualidade incomparável e sabores inesquecíveis. Nossa seleção cuidadosamente curada de vinhos e bebidas exclusivas irá transportar você para uma jornada de prazer e deleite sensorial. </p>
+                </div>
+
+
+             
+
+              </div>
+       
             </section>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </div>
+      <div class="divider-1"></div>
       <!-- HOME -->
 
       <!-- SERVICES
@@ -169,8 +199,9 @@
         </div>
       </section>
       -->
+      
       <section id="services" class="pricing-table">
-        <h1 class="cardTitle">Cardápios</h1>
+        
         <section id="sectionMenu" class="essentials" style="--delay: 10ms">
        
           <div class="inner">
@@ -252,16 +283,16 @@
       </section>
      
 
-      <div class="divider-1"></div>
+   
 
     
 
-
+      <div class="divider-1"></div>
       <!-- CONTACT -->
       <section class="section" id="contact">
         <div class="container grid">
           <div class="text">
-            <h2 class="title">Entre em contato conosco!</h2>
+            <h2 class="titleContact">Entre em contato conosco!</h2>
             <p>
               Entre em contato com a MiaCucina, queremos tirar suas dúvidas,
               ouvir suas críticas e sugestões.
@@ -320,7 +351,7 @@
 
         <div class="social">
           <div id="socialMedia">
-            <p>Nos siga também no instagram !</p>
+            <p>Conheça nosso</p>
             <a
               href="https://www.instagram.com/espaco_miacucina/"
               target="_blank"
@@ -356,5 +387,6 @@
 
     <!-- main.js -->
     <script src="main.js"></script>
+    <script src="dinner.js"></script>
   </body>
 </html>

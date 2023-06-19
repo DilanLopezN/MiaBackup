@@ -22,7 +22,9 @@
   
 
   .pricing-table {
+   
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
     background-color: #292929;
@@ -229,7 +231,7 @@ left: 50%;
     color: var(--color-gray-500);
   }
   
-  /*transition animation*/
+  /*transition animatio
   section .inner:hover {
     border-color: var(--color-purple-100);
   }
@@ -253,3 +255,4 @@ left: 50%;
       transform: translateY(30px);
     }
   }
+  n*/

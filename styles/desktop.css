@@ -246,7 +246,7 @@
   }
 
   /* testimonials */
-  #testimonials .container {
+.container {
     margin-left: auto;
     margin-right: auto;
   }
@@ -274,6 +274,13 @@
 
   footer .logo {
     font-size: 2.25rem;
+  }
+
+  #socialMedia { 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
   }
 }
 
