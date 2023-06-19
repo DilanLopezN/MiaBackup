@@ -42,6 +42,10 @@ iframe {
   width: 320px;
 }
 
+#mainlogo {
+  width: 6rem;
+  height: 6rem;
+}
 section {
   width: 100%;
 }
@@ -67,7 +71,7 @@ width: 100%;
   padding: 24px;
 }
   .subNavs {
-    display: none;
+
   }
 
 
