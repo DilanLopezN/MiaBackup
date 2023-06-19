@@ -20,9 +20,14 @@
     --color-orange: #936e4b;
   }
   
+  #services.pricing-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .pricing-table {
-   
+
     display: flex;
     align-items: center;
     justify-content: center;

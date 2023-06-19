@@ -88,6 +88,20 @@ width: 100%;
     justify-content: center;
   }
 
+  #wines {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+  
+  }
+  
+  .winesContainer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
   .swiper-button-next {
     display: none;
   }
