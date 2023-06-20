@@ -1,6 +1,7 @@
 .carousel {
   position: relative;
   width: 60%;
+  height: 700px;
   overflow: hidden;
   transform: skew(-10deg);
 }
@@ -17,7 +18,7 @@
 
 .carousel-item img {
 width: 100%;
-height: 601px;
+height: 700px;
 }
 
 .carousel-prev,
