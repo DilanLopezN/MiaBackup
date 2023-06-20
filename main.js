@@ -37,6 +37,10 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination'
   },
+  autoplay: {
+    delay: 2000, // Tempo de atraso em milissegundos entre os slides
+  },
+  loop: true,
   mousewheel: true,
   keyboard: true,
   breakpoints: {
@@ -121,6 +125,9 @@ const home = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  autoplay: {
+    delay: 1000, // Tempo de atraso em milissegundos entre os slides
+  },
 
   // If we need pagination
   pagination: {
@@ -137,6 +144,8 @@ const home = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-});
+})
+
+
 
 
