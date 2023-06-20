@@ -2,7 +2,7 @@
   position: relative;
   width: 60%;
   overflow: hidden;
-  transform: skew(-20deg);
+  transform: skew(-10deg);
 }
 
 .carousel-inner {
@@ -16,8 +16,8 @@
 }
 
 .carousel-item img {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: 601px;
 }
 
 .carousel-prev,

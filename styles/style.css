@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cormorant Upright', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -69,8 +69,8 @@ a {
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1.55rem;
 
-  --title-font: 'Cormorant Upright', sans-serif;
-  --body-font: 'Cormorant Upright', sans-serif;
+  --title-font: 'Open Sans', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
 }
 
 /*===  BASE ============================ */
@@ -515,12 +515,9 @@ width: 100%;
   text-align: center;
   height: 100%;
 }
-
 .dinnerBg {
- width: auto;
- height: auto;
- object-fit: cover;
-
+  width: 100%;
+  height: 100%;
 }
 
 .dinnerTitle {
@@ -541,13 +538,18 @@ width: 100%;
 
 #food-title {
 position: relative;
-font-size: 1.85rem;
-font-weight: bold;
+font-size: 2.5rem;
+font-weight: 700;
+text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+-webkit-font-smoothing: antialiased;
 }
 #food-description {
   position: relative;
-font-size: 1.5rem;
+font-size: 1.85rem;
+font-weight: 500;
   width: 300px;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+-webkit-font-smoothing: antialiased;
 }
 #testimonials .container {
   margin-left: 0;
@@ -616,13 +618,17 @@ font-size: 1.5rem;
 }
 #food-title-wines {
   position: relative;
-  font-size: 1.85rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+  -webkit-font-smoothing: antialiased;
 }
 
 #food-description-wines {
   position: relative;
- font-size: 1.5rem;
+ font-size: 1.85rem;
+ text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+ -webkit-font-smoothing: antialiased;
  width: 400px;
 }
 
