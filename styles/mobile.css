@@ -43,8 +43,8 @@ iframe {
 }
 
 #mainlogo {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
 }
 section {
   width: 100%;
@@ -58,6 +58,7 @@ width: 100%;
   width: 100%;
   height: 100%;
  }
+
 .pricing-table {
   display: flex;
   flex-direction: column;
@@ -65,11 +66,20 @@ width: 100%;
   justify-content: center;
   width: 100%;
   height: 100vw;
-  background-color: #292929;
-
-  gap: 24px;
-  padding: 24px;
 }
+
+.pricing-table-two {
+  flex-direction: column;
+}
+
+ .underText {
+  display: none;
+ }
+
+ #underTitle  {
+  display: none;
+ }
+
   .subMenus:nth-child(2) {
 display: none;
   }

@@ -5,13 +5,13 @@
     --color-gray-50: #f8fafc;
     --color-gray-100: #f1f5f9;
     --color-gray-200: #e2e8f0;
-    --color-gray-300: #cbd5e1;
+    --color-gray-300: black;
     --color-gray-400: #94a3b8;
     --color-gray-500: #64748b;
     --color-gray-600: #475569;
     --color-gray-700: #334155;
     --color-gray-800: #1e293b;
-    --color-gray-900: #0f172a;
+    --color-gray-900: white;
     --color-green-100: #04d361;
     --color-green-200: #1b873f;
     --color-purple-100: #936e4b;
@@ -25,21 +25,41 @@
     align-items: center;
     justify-content: center;
   }
-
+.underText {
+  text-decoration: underline;
+  font-style: italic;
+  color: #e5e7eb;
+}
   .pricing-table {
-
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     background-color: #292929;
-   height: 600px;
+   height: 700px;
     gap: 24px;
     padding: 24px;
   }
+.pricing-table-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #292929;
+ height: 700px;
+  gap: 24px;
+  padding: 24px;
+}
+.titleExe {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
 
-
+  color: black;
+}
 .cardTitle {
+  
 position: relative;
 left: 50%;
 }
@@ -47,6 +67,7 @@ left: 50%;
   #sectionMenu {
     width: 320px;
     margin: auto;
+
   }
 
   
@@ -67,6 +88,10 @@ left: 50%;
   
     color: var(--color-purple-200);
   }
+  .ph-bold {
+    color: black;
+    fill: black;
+  }
   
   .title-price {
     margin-top: 8px;
@@ -80,23 +105,24 @@ left: 50%;
     font-size: 28px;
     line-height: 37px;
   
-    color: var(--color-gray-800);
+    color: black;
   }
   
   .price {
     font-size: 28px;
     line-height: 27px;
   
-    color: var(--color-gray-800);
+    color: black;
   }
   
   .price strong {
     font-size: 28px;
     line-height: 30px;
+    color: black;
   }
   
   button {
-    background: transparent;
+    background: #936e4b;
   
     display: flex;
     justify-content: center;
@@ -104,7 +130,7 @@ left: 50%;
     padding: 16px 24px;
     width: 100%;
   
-    border: 1px solid var(--color-gray-800);
+   border: none;
     border-radius: 4px;
   
     margin-top: 16px;
@@ -113,13 +139,13 @@ left: 50%;
     font-size: 16px;
     line-height: 24px;
   
-    color: var(--color-gray-800);
-  
+    color: white;
+    transition: all 0.3s;
     cursor: pointer;
   }
   
   button.primary:hover {
-    background-color: var(--color-gray-800);
+    filter: brightness(1.1);
     color: var(--color-white);
   }
   
@@ -178,6 +204,7 @@ left: 50%;
     position: relative;
   }
   
+  /*
   section.best::before {
     content: "MAIS VANTAJOSO";
     font-weight: 700;
@@ -196,11 +223,11 @@ left: 50%;
   
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(1200%);
   
     top: -17px;
   }
-  
+  */
   .ultimate .inner {
     padding-top: 40px;
     background-color: var(--color-gray-900);
@@ -218,10 +245,11 @@ left: 50%;
   button.secondary {
     background-color: var(--color-purple-100);
     color: var(--color-white);
+    transition: all 0.3s;
   }
   
   button.secondary:hover {
-    background-color: var(--color-purple-200);
+    filter: brightness(1.1);
   }
   
   .ultimate ul {

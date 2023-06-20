@@ -145,7 +145,3 @@ const home = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 })
-
-
-
-
