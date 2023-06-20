@@ -19,7 +19,7 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/desktop.css" />
+    <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="./styles/mobile.css" />
     <link rel="stylesheet" href="./styles/card.css"/>
     <link rel="stylesheet" href="styles/dinner.css">
@@ -78,17 +78,15 @@
 
     <main>
       <!-- HOME -->
-      <div class="section" id="home">
-        <div class="swiper" id="home">
-          <img src="/assets/fotos/espaco1.jpg" id="homeBg" alt="">
+      <div class="swiper">
           <div class="swiper-wrapper">
-            
             <section class="section swiper-slide" id="home">
-            
-               <img src="" id="overlay"  alt="">
+              <img src="/assets/fotos/espaco1.jpeg" id="sectionOneBg" alt="">
+              <img src="" id="overlay"  alt="">
               <div class="container grid">
+             
                 <div class="text">
-                  <h2 class="title-main">Bem-vindos à MIA CUCINA!</h2>
+                  <h2 class="title-main">Bem-vindos à MIA CUCINA !</h2>
                   <p class="locale">Culinária Italiana em Santo André – SP</p>
                   <p class="sub-main">
                     A MIA CUCINA é um restaurante localizado em Santo André, SP,
@@ -102,73 +100,60 @@
                 </div>
               </div>
             </section>
-            <section class="section swiper-slide"  id="testimonials">
-              <img src="/assets/fotos/espaco2.jpg" id="testBg" alt="">
+
+
+            <section class="section swiper-slide" id="testimonials">
+              <img src="/assets/fotos/espaco2.jpg" id="sectionOneBg" alt="">
               <img src="" id="overlay"  alt="">
-    
               <div id="testimonialContent">
                 <div>
                   <h2 id="food-title">Sabores Autênticos</h2>
                   <p id="food-description">A comida italiana é conhecida por seus sabores autênticos e irresistíveis. Com uma combinação única de ervas, temperos e ingredientes frescos, cada prato italiano traz uma explosão de sabores que agrada o paladar e desperta os sentidos.</p>
                   <a class="button" href="#services" style="position: relative; margin-top: 1rem;">E muito mais no nosso Cardápio</a>
                 </div>
-
-
-              <div class="carousel dinnerContent">
-                <div class="carousel-inner">
-                  <div  class="carousel-item active dinnerCards">
-                    <img class="dinnerBg" src="/assets/fotos/prato1.jpg" alt="Imagem 1">
-                    <img id="overlay">
-                    <h2 class="dinnerTitle">Polpo alla griglia</h2>
+                <div class="carousel dinnerContent">
+                  <div class="carousel-inner">
+                    <div  class="carousel-item active dinnerCards">
+                      <img class="dinnerBg" src="/assets/fotos/prato1.jpg" alt="Imagem 1">
+                      <img id="overlay">
+                      <h2 class="dinnerTitle">Polpo alla griglia</h2>
+                    </div>
+                    <div  class="carousel-item dinnerCards">
+                      <img id="overlay">
+                      <img class="dinnerBg" src="/assets/fotos/prato2.png" alt="Imagem 2">
+                      <h2 class="dinnerTitle">Risoto Toscano</h2>
+                    </div>
+                    <div class="carousel-item dinnerCards">
+                      <img id="overlay">
+                      <img  class="dinnerBg"src="/assets/fotos/prato3.png" alt="Imagem 3">
+                      <h2 class="dinnerTitle">Risoto Gamberi</h2>
+                    </div>
                   </div>
-                  <div  class="carousel-item dinnerCards">
-                    <img id="overlay">
-                    <img class="dinnerBg" src="/assets/fotos/prato2.png" alt="Imagem 2">
-                    <h2 class="dinnerTitle">Risoto Toscano</h2>
-                  </div>
-                  <div class="carousel-item dinnerCards">
-                    <img id="overlay">
-                    <img  class="dinnerBg"src="/assets/fotos/prato3.png" alt="Imagem 3">
-                    <h2 class="dinnerTitle">Risoto Gamberi</h2>
-                  </div>
-                </div>
-                
-                <a class="carousel-prev" href="#">&#10094;</a>
-                <a class="carousel-next" href="#">&#10095;</a>
-              </div>
-
-
-
-
-
-
-
-
-              </div>
-        
+                  
+                  <a class="carousel-prev" href="#">&#10094;</a>
+                  <a class="carousel-next" href="#">&#10095;</a>
             </section>
 
-            <section class="section swiper-slide" id="wines">
-             <img src="/assets//fotos/espaco3.jpeg" alt="" id="testBg">
+            <section class="section swiper-slide" id="home">
+              <img src="/assets/fotos/espaco3.jpeg" id="sectionOneBg" alt="">
               <img src="" id="overlay"  alt="">
+              <div class="container grid">
+                <div class="winesContainer">
+                  <div>
+                    <h1 id="food-title-wines" >Vinhos & Bebidas</h1>
+                    <p id="food-description-wines" >onde os melhores vinhos e bebidas se unem para criar uma experiência única. Descubra um mundo de qualidade incomparável e sabores inesquecíveis. Nossa seleção cuidadosamente curada de vinhos e bebidas exclusivas irá transportar você para uma jornada de prazer e deleite sensorial. </p>
+                  </div>
+  
+              </div>
+            </section>
+
+
 
       
-              <div class="winesContainer">
-                <div>
-                  <h1 id="food-title-wines" >Vinhos & Bebidas</h1>
-                  <p id="food-description-wines" >onde os melhores vinhos e bebidas se unem para criar uma experiência única. Descubra um mundo de qualidade incomparável e sabores inesquecíveis. Nossa seleção cuidadosamente curada de vinhos e bebidas exclusivas irá transportar você para uma jornada de prazer e deleite sensorial. </p>
-                </div>
-
-
-             
-
-              </div>
-       
-            </section>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        </div>
+     
       </div>
   
       <!-- HOME -->

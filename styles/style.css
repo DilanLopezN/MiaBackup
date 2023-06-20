@@ -145,6 +145,34 @@ button:hover {
 }
 
 /*====  LAYOUT ============================ */
+
+.title-main {
+  font-weight: 700;
+  font-size: 2.35rem;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.sub-main {
+  font-weight: 600;
+  font-size: 2rem;
+  max-width: 700px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  word-break: keep-all;
+}
+
+.locale {
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 1.85rem;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -196,6 +224,7 @@ button:hover {
 /*====  LOGO ============================ */
 
 /*====  NAVIGATION ============================ */
+
 nav {
   height: var(--header-height);
   display: flex;
@@ -327,26 +356,27 @@ nav.show div.icon-close {
 }
 
 #home {
-  overflow: hidden;
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
- height: 600px;
+  height: 600px;
+}
 
+
+
+#sectionOneBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
 }
-#homeBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-   height: 700px;
-  z-index: -1;
-}
+
 #overlay {
     background-color: #000;
     bottom: 0;
     left: 0;
-    opacity: .6;
+    opacity: .5;
     position: absolute;
     right: 0;
     top: 0;
@@ -485,22 +515,19 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
- height: 700px;
+  height: 600px;
 }
 #testBg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
 } 
 
 #testimonialContent{
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
   justify-content: space-evenly;
 }
 
@@ -509,7 +536,7 @@ width: 100%;
   justify-content: center;
   align-items: center;
   width: 70%;
-  height: 600px;
+  height: 100%;
 }
 
 .dinnerCards {
@@ -523,11 +550,11 @@ width: 100%;
 }
 
 .dinnerTitle {
-  position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  font-size: 3rem;
+    font-size: 2.5rem;
 } 
 
 #obsDescripiton {
@@ -540,17 +567,18 @@ width: 100%;
 
 #food-title {
 position: relative;
-font-size: 2.5rem;
+margin-top: 1rem;
+font-size: 2rem;
 font-weight: 700;
-text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 -webkit-font-smoothing: antialiased;
 }
 #food-description {
   position: relative;
-font-size: 1.85rem;
+font-size: 1.65rem;
 font-weight: 500;
   width: 300px;
-  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 -webkit-font-smoothing: antialiased;
 }
 #testimonials .container {
@@ -787,7 +815,28 @@ footer .social a:hover {
 }
 
 
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
+.hand-emoji {
+  font-size: 48px;
+  animation: wave-animation 2s infinite;
+}
 
 
 
