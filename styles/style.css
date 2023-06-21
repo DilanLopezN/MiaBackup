@@ -148,7 +148,7 @@ button:hover {
 
 .title-main {
   font-weight: 700;
-  font-size: 2.35rem;
+  font-size: 3.35rem;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   color: white;
@@ -157,8 +157,8 @@ button:hover {
 
 .sub-main {
   font-weight: 600;
-  font-size: 2rem;
-  max-width: 700px;
+  font-size: 3rem;
+  max-width: 1200px;
   -webkit-font-smoothing: antialiased;
   color: white;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
@@ -168,7 +168,7 @@ button:hover {
 .locale {
   font-weight: 600;
   margin-top: 1rem;
-  font-size: 1.85rem;
+  font-size: 2.85rem;
   -webkit-font-smoothing: antialiased;
   color: white;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
@@ -360,14 +360,14 @@ nav.show div.icon-close {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 600px;
+  height: 100vh;
 }
 
 
 
 #sectionOneBg {
     position: absolute;
-    width: 100%;
+    width: 1600px;
     height: 100%;
     z-index: -5;
 }
@@ -376,7 +376,7 @@ nav.show div.icon-close {
     background-color: #000;
     bottom: 0;
     left: 0;
-    opacity: .5;
+    opacity: .3;
     position: absolute;
     right: 0;
     top: 0;
@@ -515,7 +515,7 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 100vh;
 }
 #testBg {
   position: absolute;
@@ -531,31 +531,6 @@ width: 100%;
   justify-content: space-evenly;
 }
 
-.dinnerContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 100%;
-}
-
-.dinnerCards {
-  position: relative;
-  text-align: center;
-  height: 100%;
-}
-.dinnerBg {
-  width: 100%;
-  height: 100%;
-}
-
-.dinnerTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-} 
 
 #obsDescripiton {
   font-size: 12px;
@@ -567,17 +542,18 @@ width: 100%;
 
 #food-title {
 position: relative;
-margin-top: 1rem;
-font-size: 2rem;
+padding-bottom: 1.5rem;
+font-size: 3rem;
 font-weight: 700;
 text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 -webkit-font-smoothing: antialiased;
 }
 #food-description {
   position: relative;
-font-size: 1.65rem;
+  padding: 1rem;
+font-size: 2.5rem;
 font-weight: 500;
-  width: 300px;
+  width: 500px;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 -webkit-font-smoothing: antialiased;
 }
@@ -634,8 +610,9 @@ font-weight: 500;
 #wines {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: center;
+  width: 100%;
+
   text-align: center;
 }
 
@@ -648,7 +625,7 @@ font-weight: 500;
 }
 #food-title-wines {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
   -webkit-font-smoothing: antialiased;
@@ -656,10 +633,10 @@ font-weight: 500;
 
 #food-description-wines {
   position: relative;
- font-size: 1.85rem;
+ font-size: 2.5rem;
  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
  -webkit-font-smoothing: antialiased;
- width: 400px;
+ width: 600px;
 }
 
 
@@ -815,48 +792,73 @@ footer .social a:hover {
 }
 
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(20deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(20deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
 }
 
-.hand-emoji {
-  font-size: 48px;
-  animation: wave-animation 2s infinite;
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.carousel {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttonDinner {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background: transparent;
+border: 1px solid white;
+border-radius: 8px;
+width: 180px;
+height: 38px;
+font-size: 1.65rem;
+transition: all 0.3s;
+
+
+}
+
+.buttonDinner:hover {
+  border: 2px solid white;
+  filter: blur(0.8px)
+}
+
+.dinnerTitle {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 1rem;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+-webkit-font-smoothing: antialiased;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.swiper {
+  background-color: #292929;
+}

@@ -32,24 +32,7 @@ function changeHeaderWhenScroll() {
 }
 
 /* Testimonials carousel slider swiper */
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  autoplay: {
-    delay: 2000, // Tempo de atraso em milissegundos entre os slides
-  },
-  loop: true,
-  mousewheel: true,
-  keyboard: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 1,
-      setWrapperSize: true
-    }
-  }
-})
+
 
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
@@ -120,16 +103,19 @@ function navigateHome() {
 }
 
 
-const home = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  autoplay: {
-    delay: 1000, // Tempo de atraso em milissegundos entre os slides
+  pagination: {
+    el: '.swiper-pagination'
   },
-
-  // If we need pagination
+  
+  autoplay: {
+    delay: 2000, // Tempo de atraso em milissegundos entre os slides
+  },
+  
+  loop: true,
+  mousewheel: true,
+  keyboard: true,
   pagination: {
     el: '.swiper-pagination',
   },
@@ -144,4 +130,41 @@ const home = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      setWrapperSize: true
+    }
+  }
+})
+
+
+const dinner = new Swiper('.dinnerswiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  loop: true,
+  mousewheel: true,
+  keyboard: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      setWrapperSize: true
+    }
+  }
 })
