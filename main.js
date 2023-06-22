@@ -108,12 +108,10 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination'
   },
-  
+  loop: true,
   autoplay: {
-    delay: 2000, // Tempo de atraso em milissegundos entre os slides
+    delay: 1000, // Tempo de atraso em milissegundos entre os slides
   },
-  
-  loop: true,
   mousewheel: true,
   keyboard: true,
   pagination: {
@@ -138,33 +136,3 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-
-const dinner = new Swiper('.dinnerswiper', {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  loop: true,
-  mousewheel: true,
-  keyboard: true,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  breakpoints: {
-    767: {
-      slidesPerView: 1,
-      setWrapperSize: true
-    }
-  }
-})
